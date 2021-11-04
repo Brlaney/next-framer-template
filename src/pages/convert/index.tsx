@@ -2,10 +2,9 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp, stagger } from '@/lib/utils/animations';
 import GoBack from '@/components/GoBack';
-import { BiShapeCircle } from 'react-icons/bi';
-import styles from '@/styles/pages/Tests.module.scss';
+import styles from '@/styles/pages/Pages.module.scss';
 
-const Tests = () => {
+const Convert = () => {
   const endpoint = '/';
 
   return (
@@ -23,7 +22,7 @@ const Tests = () => {
 
         {/* Header */}
         <motion.h2 className={styles.header} variants={fadeInUp}>
-          Welcome, to the test page
+          Converting between Radians & Degrees
         </motion.h2>
 
         <motion.div className={styles.box} variants={fadeInUp}>
@@ -35,4 +34,4 @@ const Tests = () => {
   )
 };
 
-export default Tests;
+export default Convert;

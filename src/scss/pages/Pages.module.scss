@@ -13,7 +13,7 @@
     .header {
       width: 100%;
       margin-bottom: 1rem;
-      text-align: center;
+      text-align: justify;
       font-size: 2rem;
       padding-bottom: 0.44rem;
       border-bottom: calc(0.3px + 0.02em) solid $border-color;
@@ -21,7 +21,7 @@
     .box {
       display: flex;
       width: 80vw;
-      height: 60vh;
+      height: 75vh;
       border-radius: 10px;
       border: 1px solid $border-color;
       margin: 1.5rem 0.5rem 0.5rem 0.5rem;

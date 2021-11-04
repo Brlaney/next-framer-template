@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { fadeInUp, stagger } from '@/lib/utils/animations';
 import { BiShapeCircle } from 'react-icons/bi';
+import { MdRotate90DegreesCcw } from 'react-icons/md';
 import styles from '@/styles/pages/Home.module.scss';
 
 export default function Home() {
@@ -23,8 +24,32 @@ export default function Home() {
         {/* Grid row I - children = columns/cards */}
         <motion.div className={styles.grid} variants={fadeInUp}>
 
-          {/* Link 1 - Matrix displacement solver */}
-          <Link href='/tests'>
+          {/* Link 1 - Rad/Deg converter */}
+          <Link href='/convert'>
+            <motion.div
+              id={styles.col1}
+              variants={fadeInUp}
+              className='uk-width-1-2'
+              whileHover={{
+                position: 'relative',
+                zIndex: 1,
+                scale: 1.06,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <MdRotate90DegreesCcw
+                color='white'
+                size='3rem'
+              />
+              <p className={styles.cta}>
+                Converting Radians & Degrees
+              </p>
+            </motion.div>
+          </Link>
+
+           {/* Link 2 - Matrix displacement solver */}
+           <Link href='/unit-circle'>
             <motion.div
               id={styles.col1}
               variants={fadeInUp}

@@ -4,7 +4,8 @@ import { INav } from '@/lib/types';
 import styles from '@/styles/components/Navbar.module.scss';
 
 const navLinks = [
-  { id: 1, name: 'Unit circle', link: '/tests', active: 0 },
+  { id: 1, name: 'Converting', link: '/convert', active: 0 },
+  { id: 2, name: 'Unit circle', link: '/unit-circle', active: 0 },
 ];
 
 export default function Navbar() {
