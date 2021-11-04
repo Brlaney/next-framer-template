@@ -22,13 +22,47 @@ const Convert = () => {
 
         {/* Header */}
         <motion.h2 className={styles.header} variants={fadeInUp}>
-          Converting between Radians & Degrees
+          Converting - Radians & Degrees
         </motion.h2>
 
         <motion.div className={styles.box} variants={fadeInUp}>
-          Box
-        </motion.div>
+          <motion.div className={styles.grid} variants={fadeInUp}>
 
+            <motion.div
+              id={styles.col1}
+              variants={fadeInUp}
+              className='uk-width-1-2'
+              whileHover={{
+                position: 'relative',
+                zIndex: 1,
+                scale: 1.06,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <p className={styles.cta}>
+                Converting Radians & Degrees
+              </p>
+            </motion.div>
+
+            <motion.div
+              id={styles.col1}
+              variants={fadeInUp}
+              className='uk-width-1-2'
+              whileHover={{
+                position: 'relative',
+                zIndex: 1,
+                scale: 1.06,
+                transition: { duration: 0.2 }
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <p className={styles.cta}>
+                The Unit Circle
+              </p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </motion.div>
   )
