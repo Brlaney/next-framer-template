@@ -33,7 +33,7 @@ export default function Navbar() {
             href='/'
             className='uk-navbar-item uk-logo'
           >
-            [Calculus]
+            Next-Framer Template
           </a>
         </div>
 
