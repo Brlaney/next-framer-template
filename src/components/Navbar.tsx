@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
 import Link from 'next/link';
-import { INav } from '@/lib/types';
+import { ILink } from '@/lib/types';
 import styles from '@/styles/components/Navbar.module.scss';
 
+// Customize the following with your own pages
 const navLinks = [
-  { id: 1, name: 'Converting', link: '/convert', active: 0 },
-  { id: 2, name: 'Unit circle', link: '/unit-circle', active: 0 },
+  { id: 1, name: 'Services', link: '/services', active: 0 },
+  { id: 2, name: 'Schedule', link: '/schedule', active: 0 },
+  { id: 3, name: 'About', link: '/about', active: 0 },
 ];
 
 export default function Navbar() {
@@ -41,7 +43,7 @@ export default function Navbar() {
           className='uk-navbar-right uk-margin-right'
         >
           <ul id={styles.list} className='uk-navbar-nav'>
-            {navLinks.map((navlink: INav) => (
+            {navLinks.map((navlink: ILink) => (
               <li
                 key={navlink.id}
                 className={navlink.name ===

@@ -8,13 +8,12 @@ const Layout = ({ children }) => {
       <Head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='keywords' content='Calculus, Trig, unit circle, functions' />
-        <meta name='description' content='Unit circle' />
+        <meta name='keywords' content='NextJs, Next, React, ReactJs, Typescript, Scss, Sass, Framer-motion, animations, UiKit' />
+        <meta name='description' content='A nextJs, Framer, Typescript, + Scss template web application ready to clone and go!' />
         <link rel='icon' type='image/png' href='/favicon.png' />
-        <title>Unit Circle</title>
+        <title>NextJs | Framer</title>
       </Head>
       <Navbar />
-      {/* <Nav />  */}
       <div className={styles.container}>
         <main className={styles.main}>
           {children}

@@ -4,7 +4,7 @@ import { fadeInUp, stagger } from '@/lib/utils/animations';
 import GoBack from '@/components/GoBack';
 import styles from '@/styles/pages/Pages.module.scss';
 
-const UnitCircle = () => {
+const About = () => {
   const endpoint = '/';
 
   return (
@@ -34,4 +34,4 @@ const UnitCircle = () => {
   )
 };
 
-export default UnitCircle;
+export default About;

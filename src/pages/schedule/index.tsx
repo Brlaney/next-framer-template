@@ -4,7 +4,7 @@ import { fadeInUp, stagger } from '@/lib/utils/animations';
 import GoBack from '@/components/GoBack';
 import styles from '@/styles/pages/Pages.module.scss';
 
-const Convert = () => {
+const Schedule = () => {
   const endpoint = '/';
 
   return (
@@ -68,4 +68,4 @@ const Convert = () => {
   )
 };
 
-export default Convert;
+export default Schedule;
